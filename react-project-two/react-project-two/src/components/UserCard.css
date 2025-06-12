@@ -1,0 +1,36 @@
+.user-container {
+  width: 280px;
+  height: 350px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.user-container:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+#user-img {
+  width: 90%;
+  border-radius: 8px;
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+}
+
+#user-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #222;
+  margin: 16px 0 8px;
+}
+
+#user-desc {
+  font-size: 1rem;
+  color: #666;
+  padding: 0 16px 20px;
+}

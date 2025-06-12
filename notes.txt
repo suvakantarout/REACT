@@ -1,0 +1,23 @@
+REACT Created by FACEBOOK on 2011 and Become an open source on 2013.
+
+=> REACT is a Javascript UI library.
+
+=> Library: Library is a peice of code which focuses on a single thing. Here that is UI
+
+=> Framework: Framework is a peice of code which focuses on multiple things.
+
+=> By using react the deelopment process become very very fast.
+
+=> React is use to develop single page applications with dynamic reload / without any reload. 
+
+=> React follows component based architecture. (Components are like functions)
+
+=> Due to component based coding code reusability is possible.
+
+=> React creats Virtual DOM. ( Virtual DOM is Light weight copy of real DOM )
+
+=> We can do State management using react.
+
+=> We can do Data transfer using props in react.
+
+=> There is HOOK concept in react.
