@@ -1,0 +1,11 @@
+.counter-container {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 1.5rem;
+  border: 2px solid rgb(255, 255, 255); /* corrected 'balck' to 'black' */
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* optional for nice look */
+  align-items: center; /* optional: center content */
+}
