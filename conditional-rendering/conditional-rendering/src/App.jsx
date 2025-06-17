@@ -7,7 +7,7 @@ import LogoutBtn from "./components/LogoutBtn"
 
 
 function App() {
-  const [isLoggedIn, setLoggedIn] = useState(false);
+  const [isLoggedIn, setLoggedIn] = useState(true);
 
   // Conditional Rendering using if-else
   // if(isLoggedIn){
@@ -28,6 +28,12 @@ function App() {
     </div>
   )
 
+  // Conditional Rendering using Logical Operator
+  // return(
+  //   <div>
+  //       {isLoggedIn && <LogoutBtn />}
+  //   </div>
+  // )
 }
 
 export default App
