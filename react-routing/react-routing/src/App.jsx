@@ -6,25 +6,76 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from './components/Home';
 import About from './components/About';
 import Dashboard from './components/Dashboard';
+import Navbar from './components/Navbar';
+import ParamComp from './components/ParamComp';
+import Courses from './components/Courses';
+import MockTest from './components/MockTest';
+import Reports from './components/Reports';
+import NotFound from './components/NotFound';
 
 // Crate all Routes
 const router = createBrowserRouter(
   [
     {
       path: "/",
-      element: <Home />,
-      
+      element:
+        <div>
+          <Navbar />
+          <Home />
+        </div>
     },
 
     {
-      path: "/about",
-      element: <About />,
+      path: "/About",
+      element:
+        <div>
+          <Navbar />
+          <About />
+        </div>
     },
 
     {
       path: "/Dashboard",
-      element: <Dashboard />
+      element:
+        <div>
+          <Navbar />
+          <Dashboard />
+        </div>,
+        // Children used for Nested routing
+        children: [
+        {
+          path: 'courses',
+          element: <Courses/>
+        },
+
+        {
+          path: 'mock-tests',
+          element: <MockTest/>
+        },
+
+        {
+          path: 'reports',
+          element: <Reports/>
+        }
+      ]
+    },
+
+    // Dynamic Routing
+    {
+      path: "/student/:id",
+      element:
+        <div>
+          <Navbar />
+          <ParamComp />
+        </div>
+    },
+
+    // Route for Showing the error message
+    {
+      path: '*',
+      element: <NotFound />
     }
+
   ]
 );
 
@@ -33,7 +84,7 @@ function App() {
 
   return (
     <div>
-        <RouterProvider router={router} />
+      <RouterProvider router={router} />
     </div>
   )
 }
