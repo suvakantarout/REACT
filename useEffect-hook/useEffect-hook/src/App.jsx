@@ -13,7 +13,7 @@ function App() {
 
   // first => side-effect function
   // second => clean-up function
-  // third => comma separated dependenci list
+  // third => comma separated dependencies list
   // useEffect(() => {
   //   first
 
@@ -38,14 +38,14 @@ function App() {
 
 
   //Variation: 3
-  // (Single dependencies) Runs on every render
+  // (Single dependencies) Runs when each dependencies rendered
   // useEffect( () => {
   //   alert("I will run every time when count is upadated");
   // }, [count]);
 
 
   // Variation: 4
-  // Multiple dependencies (Runs on every render)
+  // (Multiple dependencies) Runs when each dependencies rendered
   // useEffect( () => {
   //   alert("I will run every time when count/total is updated")
   // }, [count, total])
@@ -56,7 +56,7 @@ function App() {
   // useEffect( () => {
   //   alert("Count is updated");
 
-  //   // Cleanup function => When the component is unmounted from the app
+  //   // Cleanup function => Runs When the component is unmounted from the app
   //   return () => {
   //     alert("Count is unmounted from UI");
   //   }

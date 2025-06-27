@@ -94,7 +94,8 @@ export default App
 
 
 
-// CREATE BROWSER ROUTER
+// CREATE BROWSER ROUTER DOCUMENTATION
+// visit URL => 
 
 // import
 // import {
@@ -102,7 +103,7 @@ export default App
 //   RouterProvider,
 // } from "react-router-dom";
 
-// // Create
+// // Create Route
 // const router = createBrowserRouter([
 //   {
 //     path: "/",

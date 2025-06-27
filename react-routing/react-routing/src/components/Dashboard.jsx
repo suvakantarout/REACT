@@ -5,7 +5,7 @@ const Dashboard = () => {
   return (
     <div>
         Dashboard Page
-        <Outlet/>  {/* When we add child Routes in any components to make them working we need to use the <Outlet/> inside the parent Component */}
+        <Outlet/>  {/* When we add children Routes in any component, to make them working we need to use the <Outlet/> inside the parent Component */}
     </div>
   )
 }
