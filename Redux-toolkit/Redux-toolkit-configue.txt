@@ -1,0 +1,11 @@
+STEPS:
+
+FOR PROPER STEP BY STEP DOCUMENTATION VISIT => https://redux-toolkit.js.org/tutorials/quick-start
+
+=> Create a folder 'redux' inside src and inside the store folder create 'store.js' file.
+
+=> Wrap app component under provider.
+
+=> Create slice inside 'features' folder.
+
+=> Register reduce in store.
